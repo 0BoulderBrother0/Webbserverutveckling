@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;   
+}
+
+body {
+    background: #F3F3F3;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(135deg, rgba(243, 243, 243, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(227, 227, 227, 1) 100%);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+main {
+    background-color: white;
+    max-width: 50rem;
+    margin: auto;
+    padding: 2rem;
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+    filter: opacity(0.8);
+}
+
+pre {
+    background-color: white;
+    color: purple;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.note-title {
+    font-weight: bold;
+}
+
+.rainbow-text span, .rainbow-text a {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+    background-size: 200% auto;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 8s linear infinite;
+}
+
+.rainbow-text a:hover {
+    font-weight: 700;
+}
+
+@keyframes rainbow {
+    to {
+        background-position: 400% center;
+    }
+}
+
+@keyframes rainbow-fast {
+    to {
+        background-position: 200% center;
+    }
+}

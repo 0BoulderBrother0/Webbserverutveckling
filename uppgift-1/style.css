@@ -1,0 +1,16 @@
+body {
+    background-color: aliceblue;
+}
+
+
+form {
+    margin: auto;
+    max-width: 50rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+form > * {
+    display: block;
+    flex: 1;
+}
